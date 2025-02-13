@@ -7,61 +7,53 @@
     android:background="@drawable/ic_launcher_foreground"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/etPeso"
+    <TextView
+        android:id="@+id/tvAnos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="52dp"
-        android:ems="10"
-        android:inputType="numberDecimal"
+        android:layout_marginBottom="304dp"
+        android:text="@string/anos"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvPeso" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCamioneta"
+        app:layout_constraintVertical_bias="0.956" />
 
     <TextView
-        android:id="@+id/tvEstatura"
+        android:id="@+id/tvPoliza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/estatura"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etPeso" />
-
-    <TextView
-        android:id="@+id/tvPeso"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:text="@string/peso"
+        android:layout_marginTop="56dp"
+        android:text="@string/tipoauto"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/etEstatura"
+        android:id="@+id/etAnos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="56dp"
         android:ems="10"
         android:inputType="numberDecimal"
+        android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvEstatura" />
+        app:layout_constraintTop_toBottomOf="@id/tvAnos" />
 
     <Button
-        android:id="@+id/btnCalcular"
+        android:id="@+id/btnCosto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="104dp"
-        android:text="@string/IMC"
+        android:layout_marginTop="80dp"
+        android:text="@string/costo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etEstatura" />
+        app:layout_constraintTop_toBottomOf="@+id/etAnos" />
 
     <TextView
         android:id="@+id/tvImc"
@@ -75,5 +67,60 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCalcular" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCosto" />
+
+    <TextView
+        android:id="@+id/tvCostoPoliza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/poliza"
+        app:layout_constraintBottom_toTopOf="@+id/tvAnos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Costoo"
+        app:layout_constraintBottom_toTopOf="@+id/btnCosto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAnos"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <Button
+        android:id="@+id/btnSedan"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/sedan"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPoliza" />
+
+    <Button
+        android:id="@+id/btnCamioneta"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/camioneta"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSedan" />
+
+    <Button
+        android:id="@+id/btnDeportivo"
+        android:layout_width="133dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/deportivo"
+        app:layout_constraintBottom_toTopOf="@+id/tvCostoPoliza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCamioneta"
+        app:layout_constraintVertical_bias="0.027" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Asignacion4_calculadora_IMC</string>
-    <string name="estatura">Estatura</string>
-    <string name="peso">Peso</string>
-    <string name="IMC">Calcular IMC</string>
+    <string name="anos">Introduzca los Anos</string>
+    <string name="tipoauto">Tipo de Auto</string>
+    <string name="costo">Calcular</string>
+    <string name="poliza"></string>
+    <string name="total"></string>
+    <string name="sedan">Sedan</string>
+    <string name="camioneta">Camioneta</string>
+    <string name="deportivo">Deportivo</string>
 </resources>
